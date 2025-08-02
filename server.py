@@ -10,7 +10,11 @@ app = FastAPI()
 # Configure CORS
 origins = [
     "http://localhost",
-    "http://localhost:8080",  # Allow your React app's origin
+    "http://localhost:8080",
+    "https://modamorph-tech-website.vercel.app/",
+    "https://modamorph-tech-website.vercel.app",
+    "modamorph-tech-website.vercel.app/"
+    "modamorph-tech-website.vercel.app"# Allow your React app's origin
 ]
 
 app.add_middleware(
@@ -62,3 +66,4 @@ def send_email_api(request: EmailRequest):
         request.body
     )
     return {"message": "✅ Email sent successfully!"}
+
