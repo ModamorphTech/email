@@ -13,10 +13,15 @@ origins = [
     "http://localhost:8080",
     "https://modamorph-tech-website.vercel.app/",
     "https://modamorph-tech-website.vercel.app",
-    "modamorph-tech-website.vercel.app/"
-    "modamorph-tech-website.vercel.app"
-    "https://modamorph-tech-website-modamorphtechs-projects.vercel.app/"
-    "https://modamorph-tech-website-modamorphtechs-projects.vercel.app"# Allow your React app's origin
+    "modamorph-tech-website.vercel.app/",
+    "modamorph-tech-website.vercel.app",
+    "https://modamorph-tech-website-modamorphtechs-projects.vercel.app/",
+    "https://modamorph-tech-website-modamorphtechs-projects.vercel.app",
+    "https://www.modamorph.info/",
+    "www.modamorph.info",
+    "https://www.modamorph.info",
+    "https://modamorph.info/",
+    "https://modamorph.info"# Allow your React app's origin
 ]
 
 app.add_middleware(
@@ -68,5 +73,6 @@ def send_email_api(request: EmailRequest):
         request.body
     )
     return {"message": "✅ Email sent successfully!"}
+
 
 
